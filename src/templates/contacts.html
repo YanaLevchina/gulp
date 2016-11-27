@@ -1,0 +1,27 @@
+    {% extends "layout.html" %}
+
+    {% block main %}
+
+    <main class="main">
+    <section class="section">
+    <div class="section__main">
+    <h1 class="section__header">Contact Us</h1>
+    <p class="section__text">Nam in maximus arcu, ac aliguam tellus.Donec vestibulum ipsum nunc, at placerat ante posuere non.
+      Integer at dui a lacus suscipit elementum id non massa. Pellentucgue habitant morbi tristigue senectus et
+      netus et malesuada fames ac turpis egestas. Nunc eu negue eros. Ut eu guam justo. </p>
+      <hr class="hline">
+      <form class="section__form">
+      <label for="1"></label>
+      <input class="section__form-field" id="1"  name="name" placeholder="Your Name">
+      <label for="2"></label>
+      <input class="section__form-field"id="2" type="email" name="mail" placeholder="Email">
+      <label for="3"></label>
+      <input class="section__form-field section__form-field_width" id="3"  name="team" placeholder="Subject">
+      <p><textarea class="section__form-message" name="message" placeholder="Your Message" ></textarea></p>
+      <p class="section__form-text"> <input class="section__form-button" type="button" value="SEND MESSAGE"></p>
+      </form>
+     </div>
+     </section>
+     </main>
+
+     {% endblock %}
