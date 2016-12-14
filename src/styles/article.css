@@ -1,0 +1,228 @@
+   .article-header{
+   font-family: Lato, serif;
+   font-size: 40px;
+   font-style: regular;
+   line-height: 50px;
+   color: rgb(0,0,0);
+   }
+
+   .section{
+   box-shadow: 0 0 25px 0px rgba(0,0,0,0.1) ;
+   padding-left:10%;
+   padding-right: 10.3%;
+   padding-top:  3%;
+   padding-bottom: 8.6%;
+   background: rgb(255, 255, 255);
+   margin-bottom: 5%;
+   margin-top: 0;
+   position: relative;
+   }
+
+   .section_with-photo{
+   padding-top: 0;
+   }
+
+   .date-of-the-article{
+   font-size: 14px;
+   font-family: Lato, serif;
+   line-height: 50px;
+   color: rgb(189,189,189);
+   }
+
+   .section__main-text{
+   margin-bottom: 45px;
+   font-size: 17px;
+   font-family: Lato,serif;
+   line-height: 30px;
+   color: rgb(131,131,131);
+   margin-bottom: 6.3%;
+   }
+
+   .hline{
+   width: inherit;
+   border: none;
+   background-color: rgb(238,238,238);
+   color: rgb(238,238,238);
+   height: 2px;
+   }
+
+   .article{
+   position: relative;
+   }
+
+   .section__read-more{
+   font: 21px Lato;
+   line-height: 50px;
+   color: rgb(92,107,192);
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 10px;
+   border: 1px solid rgba(238,238,238,0);
+   transition: border 200ms linear;
+   }
+
+   .section__read-more:hover{
+   border: 1px solid rgb(238,238,238);
+   }
+
+   .section__read-more:active{
+   border: 1px solid rgb(92,107,192);
+   }
+
+   .section__tag{
+   font: 15px Lato;
+   line-height: 50px;
+   color: rgb(200,200,200);
+   float: right;
+   margin-left: 10px;
+   text-decoration: none;
+   }
+
+   .section__tag:hover{
+    color: rgb(121,132,201);
+    text-decoration:underline;
+   }
+
+   .section__tag:active{
+    color: rgb(121,132,201);
+    text-decoration: none;
+   }
+
+  /* .section__i-do{
+   text-align: center;
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: rgb(92,107,192);
+   position: absolute;
+   right: -12px;
+   top: 20px;
+   height: 35px;
+   transition: padding 200ms linear;
+   }*/
+
+   .section__i-do{
+   text-align: center;
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: rgb(92,107,192);
+   position:absolute;
+   right: -15%;
+   top: 20px;
+   height: 35px;
+   transition: padding 200ms linear;
+  }
+
+   .section__i-do-link {
+   font: 14px Lato;
+   color: white;
+   display: inline;
+   text-decoration: none;
+   text-transform: capitalize;
+   line-height: 35px;
+  }
+
+   .section__i-do:hover{
+   padding-top:+3px;
+   padding-bottom: +3px;
+   padding-left: +13px;
+   padding-right: +13px;
+   background-color: rgb(108,121,198);
+   }
+
+   .section__i-do:active{
+   background-color: rgb(83,96,172);
+   }
+
+   .section__photo1{
+   position: relative;
+   left: -6.3%;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   }
+
+   .section__main-text_italic{
+   font-size: 25px;
+   font-family: Lato, serif;
+   font-style: italic;
+   line-height: 38px;
+   color: rgb(163,163,163);
+   }
+
+   .main-text_middle{
+   margin-bottom: 35px;
+   }
+
+   .section__photo2{
+  float: left;
+  margin-right: 40px;
+   }
+
+   .section__text_with-line{
+   font: 20px Lato;
+   font-style: italic;
+   color: rgb(163,163,163);
+   line-height: 30px;
+   border-left: 5px solid rgb(238, 238, 238);
+   padding-left: 20px;
+   margin-bottom: 35px;
+   }
+
+   .section__link-text{
+   text-decoration: none;
+   color: rgb(92,107,192);
+   }
+
+
+@media screen and (max-width:480px) {
+  .article{
+    position: static;
+  }
+
+  .section{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: white;
+  }
+
+  .section__main-text_italic{
+    font-size: 18px;
+  }
+  .section__photo2 {
+  float: none;
+  display: block;
+  margin: 0 auto;
+  }
+  .section__i-do_with-photo {
+  right: 0;
+  top: 0;
+  }
+  .section__i-do {
+  top: 0;
+  right: 0;
+  }
+
+  .article-header{
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+    .section__read-more{
+      display: block;
+      width: auto;
+      border: 0;
+    }
+    .section__read-more:hover{
+      border:none;
+    }
+    .section__read-more:active{
+      border: none;
+    }
+    .section__tag{
+       display: inline;
+       float: left;
+       position: relative;
+       bottom: 10px;
+     }
+}
