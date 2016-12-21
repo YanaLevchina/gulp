@@ -1,0 +1,25 @@
+    {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "title": "About",
+	    "type": "object",
+      "field": {
+          "firstName": {
+          "type": "string"
+          },
+          "lastName": {
+          "type": "string"
+        },
+          "email": {
+            "type":"string"
+          },
+          "phone": {
+          "type": "string"
+        },
+
+
+
+
+
+
+
+    }

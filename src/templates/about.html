@@ -1,0 +1,39 @@
+{% set a = 3 %}
+{% extends "layout.html" %}
+{% block main %}
+    <main class="main">
+        <section class="section">
+          <div class="section__main">
+                <h1 class="section__header">About</h1>
+                <hr class="hline">
+                <form  class="section__form" action="gmail" name="about" id="form-about">
+                  <p class="field-header">first name</p>
+                  <input class="section__form-field form__username" name="username" type="text" placeholder="John">
+                  <p class="field-header">last name</p>
+                  <input class="section__form-field form__username" name="username" type="text" placeholder="Petrov">
+                  <p class="field-header">e-mail</p>
+                  <input class="section__form-field form__mail" name="mail" type="text" placeholder="name@exemple.com">
+                  <p class="field-header">phone</p>
+                  <input class="section__form-field form__subject" name="phone" type="tel" placeholder="+_(___)-___-__-__">
+                  <p class="field-header">date of birth</p>
+                  <input class="section__form-field form__subject" name="data" id="datepicker" type="tel" placeholder="DD/MM/YYYY">
+                  <p class="field-header">sex</p>
+
+                    <input class="section__form-radio" id="radio1" type="radio" name="gender" value="male">
+                    <p class="radio-header">Male</p><br>
+                    <input class="section__form-radio" id="radio2" type="radio" name="gender" value="female">
+                    <p class="radio-header">Female</p><br>
+
+                  <button class="form__submit" type="submit" name="button"> submit </button>
+                </form>
+          </div>
+        </section>
+    </main>
+
+    <script>
+   $( function() {
+     $( "#datepicker" ).datepicker();
+   } );
+   </script>
+
+{% endblock %}
